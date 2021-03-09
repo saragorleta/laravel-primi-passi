@@ -7,9 +7,13 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Home</h1>
 
-  <h2>Ciao {{$nome}} {{$cognome}}</h2>
+  <h1>contatti</h1>
+
+@foreach ($lista_contatti as $contatto)
+<p>{{$contatto}}</p>
+
+@endforeach
 
 </body>
 </html>

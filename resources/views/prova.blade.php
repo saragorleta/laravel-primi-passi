@@ -7,9 +7,24 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Home</h1>
 
-  <h2>Ciao {{$nome}} {{$cognome}}</h2>
 
+  <h1>Prova</h1>
+
+
+
+  <h2>
+    @foreach ($cose as $cosa)
+    <p>{{$cosa}}</p>
+    @endforeach
+  </h2>
+
+  <h3>
+    @forelse ($animali as $animale)
+    {{$animale}}
+    @empty
+    <p>no Animal</p>
+    @endforelse
+  </h3>
 </body>
 </html>
