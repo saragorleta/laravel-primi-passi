@@ -10,10 +10,14 @@
 
   <h1>contatti</h1>
 
-@foreach ($lista_contatti as $contatto)
-<p>{{$contatto}}</p>
+<p>
+  @foreach ($lista_contatti as $contatto)
+    {{ $contatto }}@if(!$loop->last),
+    @endif
+  @endforeach
+</p>
 
-@endforeach
+
 
 </body>
 </html>
